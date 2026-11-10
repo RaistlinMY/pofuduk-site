@@ -1,0 +1,162 @@
+/* Same palette as the app (src/theme/colors.ts). System fonts only: no font CDN, nothing to track. */
+:root {
+  --background: #fbf4ea;
+  --surface: #ffffff;
+  --ink: #3b2a22;
+  --muted: #7a6455;
+  --link: #a15f45;
+  --accent-soft: #f3e2cb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--ink);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 32px 16px 56px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--ink);
+  text-decoration: none;
+  font: 800 24px/1 ui-rounded, 'SF Pro Rounded', -apple-system, sans-serif;
+}
+
+.brand img {
+  width: 44px;
+  height: 44px;
+  border-radius: 11px;
+}
+
+.lang {
+  color: var(--muted);
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+h1,
+h2 {
+  font-family: ui-rounded, 'SF Pro Rounded', -apple-system, sans-serif;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 34px;
+  margin: 0 0 4px;
+}
+
+h2 {
+  font-size: 22px;
+  margin: 32px 0 8px;
+}
+
+.updated {
+  color: var(--muted);
+  font-size: 15px;
+  margin: 0 0 20px;
+}
+
+.card {
+  background: var(--surface);
+  border-radius: 20px;
+  padding: 20px 22px;
+}
+
+.summary {
+  background: var(--accent-soft);
+  border-radius: 20px;
+  padding: 18px 22px;
+  font-weight: 600;
+}
+
+a {
+  color: var(--link);
+}
+
+ul {
+  padding-left: 22px;
+}
+
+li {
+  margin: 4px 0;
+}
+
+details {
+  background: var(--surface);
+  border-radius: 16px;
+  padding: 14px 18px;
+  margin: 10px 0;
+}
+
+summary {
+  cursor: pointer;
+  font-weight: 700;
+}
+
+details p {
+  margin: 10px 0 0;
+}
+
+.links {
+  display: grid;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.links a {
+  display: block;
+  background: var(--surface);
+  border-radius: 16px;
+  padding: 16px 20px;
+  color: var(--ink);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.hero {
+  text-align: center;
+  padding-top: 24px;
+}
+
+.hero img {
+  width: 128px;
+  height: 128px;
+  border-radius: 30px;
+}
+
+.hero p {
+  color: var(--muted);
+}
+
+footer {
+  margin-top: 40px;
+  color: var(--muted);
+  font-size: 14px;
+  text-align: center;
+}
+
+footer a {
+  color: var(--muted);
+}
